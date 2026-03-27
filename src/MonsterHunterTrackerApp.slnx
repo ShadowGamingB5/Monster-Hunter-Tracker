@@ -1,4 +1,8 @@
 <Solution>
-  <Folder Name="/SolutionItems/" />
+  <Folder Name="/SolutionItems/">
+    <File Path="../.gitignore" />
+    <File Path="../LICENSE" />
+    <File Path="../README.md" />
+  </Folder>
   <Project Path="MonsterHunterTracker/MonsterHunterTracker.csproj" />
 </Solution>
