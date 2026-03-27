@@ -29,15 +29,16 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         label1 = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
         // label1
         // 
-        label1.Location = new System.Drawing.Point(17, 17);
-        label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+        label1.Location = new System.Drawing.Point(22, 24);
+        label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(94, 24);
+        label1.Size = new System.Drawing.Size(121, 34);
         label1.TabIndex = 0;
         label1.Text = "Game";
         // 
@@ -46,11 +47,14 @@ partial class Form1
         AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.ControlDarkDark;
-        ClientSize = new System.Drawing.Size(1029, 630);
+        ClientSize = new System.Drawing.Size(1323, 882);
         Controls.Add(label1);
         Font = new System.Drawing.Font("Segoe UI", 12F);
         ForeColor = System.Drawing.SystemColors.ControlLightLight;
-        Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+        Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
+        Margin = new System.Windows.Forms.Padding(4);
+        MaximizeBox = false;
         Text = "Form1";
         ResumeLayout(false);
     }
