@@ -30,36 +30,53 @@ partial class Form1
     private void InitializeComponent()
     {
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-        label1 = new System.Windows.Forms.Label();
+        lblGameName = new System.Windows.Forms.Label();
+        gbGame = new System.Windows.Forms.GroupBox();
+        gbGame.SuspendLayout();
         SuspendLayout();
         // 
-        // label1
+        // lblGameName
         // 
-        label1.Location = new System.Drawing.Point(22, 24);
-        label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-        label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(121, 34);
-        label1.TabIndex = 0;
-        label1.Text = "Game";
+        lblGameName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        lblGameName.Location = new System.Drawing.Point(9, 31);
+        lblGameName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+        lblGameName.Name = "lblGameName";
+        lblGameName.Size = new System.Drawing.Size(212, 20);
+        lblGameName.TabIndex = 0;
+        lblGameName.Text = "Monster Hunter Generations Ultimate";
+        // 
+        // gbGame
+        // 
+        gbGame.Controls.Add(lblGameName);
+        gbGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+        gbGame.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        gbGame.Location = new System.Drawing.Point(28, 24);
+        gbGame.Name = "gbGame";
+        gbGame.Size = new System.Drawing.Size(234, 61);
+        gbGame.TabIndex = 2;
+        gbGame.TabStop = false;
+        gbGame.Text = "Game";
         // 
         // Form1
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.ControlDarkDark;
-        ClientSize = new System.Drawing.Size(1323, 882);
-        Controls.Add(label1);
-        Font = new System.Drawing.Font("Segoe UI", 12F);
+        ClientSize = new System.Drawing.Size(680, 457);
+        Controls.Add(gbGame);
+        Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         ForeColor = System.Drawing.SystemColors.ControlLightLight;
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
         Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
-        Margin = new System.Windows.Forms.Padding(4);
         MaximizeBox = false;
         Text = "Form1";
+        gbGame.ResumeLayout(false);
         ResumeLayout(false);
     }
 
-    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.GroupBox gbGame;
+
+    private System.Windows.Forms.Label lblGameName;
 
     #endregion
 }
