@@ -69,7 +69,7 @@ partial class Form1
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
         Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
         MaximizeBox = false;
-        Text = "Form1";
+        Text = "Monster Hunter Tracker";
         gbGame.ResumeLayout(false);
         ResumeLayout(false);
     }
