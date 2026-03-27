@@ -151,7 +151,7 @@ partial class Form1
         groupBox1.Size = new System.Drawing.Size(200, 154);
         groupBox1.TabIndex = 4;
         groupBox1.TabStop = false;
-        groupBox1.Text = "Counts";
+        groupBox1.Text = "Hunted";
         // 
         // btnDecrementCount
         // 
