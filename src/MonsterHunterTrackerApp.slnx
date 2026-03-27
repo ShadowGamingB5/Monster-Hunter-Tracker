@@ -5,6 +5,7 @@
     <File Path="../LICENSE" />
     <File Path="../README.md" />
     <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
   </Folder>
   <Project Path="MonsterHunterTracker/MonsterHunterTracker.csproj" />
 </Solution>
