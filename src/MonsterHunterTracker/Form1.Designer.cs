@@ -24,16 +24,38 @@ partial class Form1
     #region Windows Form Designer generated code
 
     /// <summary>
-    ///  Required method for Designer support - do not modify
-    ///  the contents of this method with the code editor.
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent()
     {
-        components = new System.ComponentModel.Container();
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(800, 450);
+        label1 = new System.Windows.Forms.Label();
+        SuspendLayout();
+        // 
+        // label1
+        // 
+        label1.Location = new System.Drawing.Point(17, 17);
+        label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+        label1.Name = "label1";
+        label1.Size = new System.Drawing.Size(94, 24);
+        label1.TabIndex = 0;
+        label1.Text = "Game";
+        // 
+        // Form1
+        // 
+        AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        BackColor = System.Drawing.SystemColors.ControlDarkDark;
+        ClientSize = new System.Drawing.Size(1029, 630);
+        Controls.Add(label1);
+        Font = new System.Drawing.Font("Segoe UI", 12F);
+        ForeColor = System.Drawing.SystemColors.ControlLightLight;
+        Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
         Text = "Form1";
+        ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Label label1;
 
     #endregion
 }
