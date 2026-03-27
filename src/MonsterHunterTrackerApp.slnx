@@ -3,6 +3,7 @@
     <File Path="../.gitignore" />
     <File Path="../LICENSE" />
     <File Path="../README.md" />
+    <File Path=".editorconfig" />
   </Folder>
   <Project Path="MonsterHunterTracker/MonsterHunterTracker.csproj" />
 </Solution>
