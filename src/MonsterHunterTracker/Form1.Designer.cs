@@ -43,9 +43,19 @@ partial class Form1
         lstMonsterList = new System.Windows.Forms.ListBox();
         txtMonsterListSearch = new System.Windows.Forms.TextBox();
         groupMonsterList = new System.Windows.Forms.GroupBox();
+        groupBox1 = new System.Windows.Forms.GroupBox();
+        rbCharacter1 = new System.Windows.Forms.RadioButton();
+        rbCharacter2 = new System.Windows.Forms.RadioButton();
+        rbCharacter3 = new System.Windows.Forms.RadioButton();
+        rbDamaging = new System.Windows.Forms.RadioButton();
+        rbDropsLow = new System.Windows.Forms.RadioButton();
+        rbDropsHigh = new System.Windows.Forms.RadioButton();
+        rbDropsMaster = new System.Windows.Forms.RadioButton();
+        label1 = new System.Windows.Forms.Label();
         gbGame.SuspendLayout();
         gbMonsterList.SuspendLayout();
         groupMonsterList.SuspendLayout();
+        groupBox1.SuspendLayout();
         SuspendLayout();
         // 
         // lblGameName
@@ -72,6 +82,11 @@ partial class Form1
         // 
         // gbMonsterList
         // 
+        gbMonsterList.Controls.Add(label1);
+        gbMonsterList.Controls.Add(rbDropsMaster);
+        gbMonsterList.Controls.Add(rbDropsHigh);
+        gbMonsterList.Controls.Add(rbDropsLow);
+        gbMonsterList.Controls.Add(rbDamaging);
         gbMonsterList.Controls.Add(btnDecrementCount);
         gbMonsterList.Controls.Add(lblHunted);
         gbMonsterList.Controls.Add(btnIncrementCount);
@@ -93,6 +108,7 @@ partial class Form1
         // 
         btnDecrementCount.BackColor = System.Drawing.SystemColors.ControlDarkDark;
         btnDecrementCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+        btnDecrementCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         btnDecrementCount.Location = new System.Drawing.Point(316, 101);
         btnDecrementCount.Name = "btnDecrementCount";
         btnDecrementCount.Size = new System.Drawing.Size(58, 40);
@@ -200,12 +216,112 @@ partial class Form1
         groupMonsterList.TabIndex = 5;
         groupMonsterList.TabStop = false;
         // 
+        // groupBox1
+        // 
+        groupBox1.Controls.Add(rbCharacter3);
+        groupBox1.Controls.Add(rbCharacter2);
+        groupBox1.Controls.Add(rbCharacter1);
+        groupBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        groupBox1.Location = new System.Drawing.Point(295, 3);
+        groupBox1.Name = "groupBox1";
+        groupBox1.Size = new System.Drawing.Size(367, 61);
+        groupBox1.TabIndex = 6;
+        groupBox1.TabStop = false;
+        groupBox1.Text = "Character Selection";
+        // 
+        // rbCharacter1
+        // 
+        rbCharacter1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        rbCharacter1.Location = new System.Drawing.Point(9, 27);
+        rbCharacter1.Name = "rbCharacter1";
+        rbCharacter1.Size = new System.Drawing.Size(104, 24);
+        rbCharacter1.TabIndex = 0;
+        rbCharacter1.TabStop = true;
+        rbCharacter1.Text = "Character1";
+        rbCharacter1.UseVisualStyleBackColor = true;
+        // 
+        // rbCharacter2
+        // 
+        rbCharacter2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        rbCharacter2.Location = new System.Drawing.Point(129, 27);
+        rbCharacter2.Name = "rbCharacter2";
+        rbCharacter2.Size = new System.Drawing.Size(104, 24);
+        rbCharacter2.TabIndex = 1;
+        rbCharacter2.TabStop = true;
+        rbCharacter2.Text = "Character2";
+        rbCharacter2.UseVisualStyleBackColor = true;
+        // 
+        // rbCharacter3
+        // 
+        rbCharacter3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        rbCharacter3.Location = new System.Drawing.Point(257, 27);
+        rbCharacter3.Name = "rbCharacter3";
+        rbCharacter3.Size = new System.Drawing.Size(104, 24);
+        rbCharacter3.TabIndex = 2;
+        rbCharacter3.TabStop = true;
+        rbCharacter3.Text = "Character3";
+        rbCharacter3.UseVisualStyleBackColor = true;
+        // 
+        // rbDamaging
+        // 
+        rbDamaging.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        rbDamaging.Location = new System.Drawing.Point(240, 179);
+        rbDamaging.Name = "rbDamaging";
+        rbDamaging.Size = new System.Drawing.Size(134, 29);
+        rbDamaging.TabIndex = 6;
+        rbDamaging.TabStop = true;
+        rbDamaging.Text = "Damaging";
+        rbDamaging.UseVisualStyleBackColor = true;
+        // 
+        // rbDropsLow
+        // 
+        rbDropsLow.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        rbDropsLow.Location = new System.Drawing.Point(240, 214);
+        rbDropsLow.Name = "rbDropsLow";
+        rbDropsLow.Size = new System.Drawing.Size(134, 24);
+        rbDropsLow.TabIndex = 7;
+        rbDropsLow.TabStop = true;
+        rbDropsLow.Text = "Drops - Low";
+        rbDropsLow.UseVisualStyleBackColor = true;
+        // 
+        // rbDropsHigh
+        // 
+        rbDropsHigh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        rbDropsHigh.Location = new System.Drawing.Point(240, 244);
+        rbDropsHigh.Name = "rbDropsHigh";
+        rbDropsHigh.Size = new System.Drawing.Size(134, 27);
+        rbDropsHigh.TabIndex = 8;
+        rbDropsHigh.TabStop = true;
+        rbDropsHigh.Text = "Drops - High";
+        rbDropsHigh.UseVisualStyleBackColor = true;
+        // 
+        // rbDropsMaster
+        // 
+        rbDropsMaster.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        rbDropsMaster.Location = new System.Drawing.Point(240, 277);
+        rbDropsMaster.Name = "rbDropsMaster";
+        rbDropsMaster.Size = new System.Drawing.Size(134, 24);
+        rbDropsMaster.TabIndex = 9;
+        rbDropsMaster.TabStop = true;
+        rbDropsMaster.Text = "Drops - Master";
+        rbDropsMaster.UseVisualStyleBackColor = true;
+        // 
+        // label1
+        // 
+        label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label1.Location = new System.Drawing.Point(240, 153);
+        label1.Name = "label1";
+        label1.Size = new System.Drawing.Size(100, 23);
+        label1.TabIndex = 10;
+        label1.Text = "Selection";
+        // 
         // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.ControlDarkDark;
         ClientSize = new System.Drawing.Size(680, 457);
+        Controls.Add(groupBox1);
         Controls.Add(groupMonsterList);
         Controls.Add(gbGame);
         Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
@@ -218,8 +334,26 @@ partial class Form1
         gbMonsterList.ResumeLayout(false);
         gbMonsterList.PerformLayout();
         groupMonsterList.ResumeLayout(false);
+        groupBox1.ResumeLayout(false);
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.RadioButton rbDropsLow;
+
+    private System.Windows.Forms.Label label1;
+
+    private System.Windows.Forms.RadioButton rbDamaging;
+    private System.Windows.Forms.RadioButton rbDropsHigh;
+
+    private System.Windows.Forms.RadioButton rbDropsMaster;
+
+    private System.Windows.Forms.RadioButton rbCharacter3;
+
+    private System.Windows.Forms.RadioButton rbCharacter2;
+
+    private System.Windows.Forms.RadioButton rbCharacter1;
+
+    private System.Windows.Forms.GroupBox groupBox1;
 
     private System.Windows.Forms.Label lblHunted;
 
