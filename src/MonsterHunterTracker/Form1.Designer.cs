@@ -52,10 +52,13 @@ partial class Form1
         rbDropsHigh = new System.Windows.Forms.RadioButton();
         rbDropsMaster = new System.Windows.Forms.RadioButton();
         label1 = new System.Windows.Forms.Label();
+        gbSelection = new System.Windows.Forms.GroupBox();
+        label2 = new System.Windows.Forms.Label();
         gbGame.SuspendLayout();
         gbMonsterList.SuspendLayout();
         groupMonsterList.SuspendLayout();
         groupBox1.SuspendLayout();
+        gbSelection.SuspendLayout();
         SuspendLayout();
         // 
         // lblGameName
@@ -97,9 +100,9 @@ partial class Form1
         gbMonsterList.Controls.Add(lstMonsterList);
         gbMonsterList.Controls.Add(txtMonsterListSearch);
         gbMonsterList.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        gbMonsterList.Location = new System.Drawing.Point(16, 22);
+        gbMonsterList.Location = new System.Drawing.Point(16, 15);
         gbMonsterList.Name = "gbMonsterList";
-        gbMonsterList.Size = new System.Drawing.Size(380, 347);
+        gbMonsterList.Size = new System.Drawing.Size(380, 354);
         gbMonsterList.TabIndex = 3;
         gbMonsterList.TabStop = false;
         gbMonsterList.Text = "Monster List";
@@ -209,10 +212,11 @@ partial class Form1
         // 
         // groupMonsterList
         // 
+        groupMonsterList.Controls.Add(gbSelection);
         groupMonsterList.Controls.Add(gbMonsterList);
         groupMonsterList.Location = new System.Drawing.Point(12, 70);
         groupMonsterList.Name = "groupMonsterList";
-        groupMonsterList.Size = new System.Drawing.Size(656, 375);
+        groupMonsterList.Size = new System.Drawing.Size(650, 375);
         groupMonsterList.TabIndex = 5;
         groupMonsterList.TabStop = false;
         // 
@@ -315,6 +319,25 @@ partial class Form1
         label1.TabIndex = 10;
         label1.Text = "Selection";
         // 
+        // gbSelection
+        // 
+        gbSelection.Controls.Add(label2);
+        gbSelection.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        gbSelection.Location = new System.Drawing.Point(402, 15);
+        gbSelection.Name = "gbSelection";
+        gbSelection.Size = new System.Drawing.Size(238, 354);
+        gbSelection.TabIndex = 4;
+        gbSelection.TabStop = false;
+        gbSelection.Text = "Selection";
+        // 
+        // label2
+        // 
+        label2.Location = new System.Drawing.Point(29, 73);
+        label2.Name = "label2";
+        label2.Size = new System.Drawing.Size(100, 23);
+        label2.TabIndex = 0;
+        label2.Text = "label2";
+        // 
         // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -335,8 +358,13 @@ partial class Form1
         gbMonsterList.PerformLayout();
         groupMonsterList.ResumeLayout(false);
         groupBox1.ResumeLayout(false);
+        gbSelection.ResumeLayout(false);
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Label label2;
+
+    private System.Windows.Forms.GroupBox gbSelection;
 
     private System.Windows.Forms.RadioButton rbDropsLow;
 
