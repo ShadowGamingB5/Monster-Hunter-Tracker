@@ -7,5 +7,6 @@
     <File Path=".editorconfig" />
     <File Path="Directory.Build.props" />
   </Folder>
+  <Project Path="MonsterHunterTracker.Logic/MonsterHunterTracker.Logic.csproj" />
   <Project Path="MonsterHunterTracker/MonsterHunterTracker.csproj" />
 </Solution>
